@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="sidebar">
+        <div class="noframe-button" id="addBtn">Add task</div>
+
+        <div id="tasks-types">
+            <ul>
+                <li>today</li>
+                <li>upcoming</li>
+            </ul>
+        </div>
+        <div id="projects-list">
+            <ul>
+                <li>first project</li>
+                <li>second project</li>
+                <li>third project</li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <div id="header">
+            <div class="logo">AnyThings</div>
+            <div id="header-buttons">
+                <div class="noframe-button">Download</div>
+                <div class="noframe-button">Support</div>
+                <div class="noframe-button">What's new</div>
+                <div class="noframe-button">Sign in</div>
+            </div>
+        </div>
+        <button id="showDialogButton">Add Task</button>
+
+            <div id="taskDialog" class="dialog hidden">
+                <div class="dialog-content">
+                    <span>Add New Task</span>
+                    <label for="taskTitle">Title:</label>
+                    <input type="text" id="taskTitle" placeholder="Enter task title" required>
+                    
+                    <label for="taskDescription">Description:</label>
+                    <input id="taskDescription" placeholder="Enter task description"></input>
+                    
+                    <label for="taskPriority">Priority:</label>
+                    <select id="taskPriority">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+
+                    <label for="taskdate">Date:</label>
+                    <input id="taskDate" placeholder="Enter date"></input>
+
+                    <label for="taskCheckList">Date:</label>
+                    <input id="taskCheckList" placeholder="Check"></input>
+                    
+                    <button id="addTaskButton">Add Task</button>
+                    <button id="closeDialogButton">Cancel</button>
+                </div>             
+            </div>
+
+        <div id="tasks-list">cards-list</div>
+        <div id="footer">footer</div>
+    </div>
+</body>
+</html>
+<script src="script.js" defer></script>
